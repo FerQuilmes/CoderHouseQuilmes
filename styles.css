@@ -1,0 +1,209 @@
+/* Reset y fuente */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Avantt", sans-serif;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+    color: rgb(245, 224, 3);
+}
+
+/* Hero */
+.hero {
+    background: url("https://images.unsplash.com/photo-1581091012184-1c7258a00b6e?auto=format&fit=crop&w=1400&q=80")
+        no-repeat center center/cover;
+    padding: 80px 20px;
+    border-top: 2px solid rgb(245, 224, 3);
+    color: #000;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+.hero ul {
+    list-style: none;
+    padding: 0;
+
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.btn {
+    background-color: rgb(245, 224, 3);
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e4cf00;
+}
+
+/* Locations */
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption h5 {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(245, 224, 3);
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* CAMBIO AQUÍ: Filtro para hacer las flechas negras */
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%)
+        contrast(100%);
+    /* Este filtro convierte el color blanco por defecto a negro. */
+}
+
+/* Opcional: Estilo para las flechas al pasar el ratón (hover) si quieres un efecto diferente */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    /* Puedes hacerlas un poco más claras o más oscuras al pasar el ratón si lo deseas */
+    filter: invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(10%)
+        contrast(100%); /* Un negro muy ligeramente más claro */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(245, 224, 3);
+    border: 1.3 px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    border-radius: 5px;
+    background-color: rgb(245, 224, 3);
+}
+
+.locations {
+    padding: 40px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid rgb(245, 224, 3);
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.footer-sections h4 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer-sections ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-sections li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-sections li:hover {
+    color: rgb(245, 224, 3);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        text-align: center;
+    }
+}
