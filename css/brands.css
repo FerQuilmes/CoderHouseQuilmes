@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Avantt', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid rgb(245, 224, 3);
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Avantt', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(245, 224, 3);
+}
+
+.brand-section {
+  margin-bottom: 3rem;
+}
+
+.brand-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.brand-card {
+  text-align: center;
+}
+
+.brand-card img {
+  max-height: 160px;
+  width: auto;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.brand-card:hover img {
+  transform: scale(1.3);
+}
+
+.brand-card p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+}

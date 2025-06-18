@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Avantt', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid rgb(245, 224, 3);
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Avantt', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(245, 224, 3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.culture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.culture-block {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  background-color: rgb(245, 224, 3);
+  padding: 6px 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.culture-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.culture-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
