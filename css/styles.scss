@@ -1,0 +1,17 @@
+// Ejemplo de mixin para estilos repetidos
+@mixin repeated-style {
+  /* Aquí van las propiedades que se repiten */
+}
+
+@mixin nav-link-style {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Avantt', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a {
+  @include nav-link-style;
+}
